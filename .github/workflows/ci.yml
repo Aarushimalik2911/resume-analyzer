@@ -29,3 +29,6 @@ jobs:
     - name: Build frontend
       run: |
         npm run build
+
+    - name: Build Docker Image
+      run: docker build -t resume-analyzer . 
